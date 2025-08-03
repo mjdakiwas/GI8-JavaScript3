@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Medium</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
+</head>
+
+<body id="medium">
+    <header id="menu">
+        <p>MENU</p>
+        <i class="material-symbols-outlined">
+            arrow_drop_down
+        </i>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="/index.html">INDEX</a></li>
+            <li><a href="/easy/easy.html">EASY</a></li>
+            <li><a href="">MEDIUM</a></li>
+            <li><a href="/hard/hard.html">HARD</a></li>
+            <li><a href="/very-hard/very-hard.html">VERY HARD</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1><span id="title">How many pizza slices should each person have?</span> Calculator</h1>
+        <section id="input-container">
+            <div id="slices-container">
+                <input type="number" name="slices" id="slices">
+                <label for="slices">Number of Pizza Slices</label>
+            </div>
+
+            <p id="split-p">split between</p>
+
+            <div id="people-container">
+                <input type="number" name="people" id="people">
+                <label for="people">Number of People</label>
+            </div>
+
+        </section>
+        <button type="submit" id="calculate">Calculate</button>
+        <p id="medium-invalid"></p>
+
+        <section id="result-container">
+            <button id="back">Back</button>
+            <p id="result"></p>
+        </section>
+    </main>
+
+    <script src="/script.js"></script>
+    <script src="medium.js"></script>
+</body>
+
+</html>

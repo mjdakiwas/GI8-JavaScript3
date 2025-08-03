@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Hard</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
+</head>
+
+<body id="hard">
+    <header id="menu">
+        <p>MENU</p>
+        <i class="material-symbols-outlined">
+            arrow_drop_down
+        </i>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="/index.html">INDEX</a></li>
+            <li><a href="/easy/easy.html">EASY</a></li>
+            <li><a href="">MEDIUM</a></li>
+            <li><a href="/hard/hard.html">HARD</a></li>
+            <li><a href="/very-hard/very-hard.html">VERY HARD</a></li>
+        </ul>
+    </nav>
+    <main>
+        <ul id="tabs-container">
+            <li class="tab" id="submit-tab">Submit</li>
+            <li class="tab" id="retrieve-tab">Retrieve</li>
+        </ul>
+        <section>
+            <section id="input-container">
+                <label for="fullname">Input name</label>
+                <input type="text" name="fullname" id="fullname">
+
+                <section id="input-ssn">
+                    <label for="ssn">Input SSN</label>
+                    <input type="text" name="ssn" id="ssn">
+                </section>
+
+                <button type="submit" id="submit">Submit</button>
+            </section>
+
+            <section id="retrieve-container">
+                <label for="name-search">Retrieve name</label>
+                <input type="text" name="name-search" id="name-search">
+                <button id="search-name">Search</button>
+
+                <label for="ssn-search">Retrieve SSN</label>
+                <input type="text" name="ssn-search" id="ssn-search">
+                <button id="search-name">Search</button>
+
+                <!-- <p>Collected Data</p> -->
+            </section>
+        </section>
+    </main>
+
+    <script src="/script.js"></script>
+    <script src="hard.js"></script>
+</body>
+
+</html>

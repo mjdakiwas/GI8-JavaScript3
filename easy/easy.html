@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge: Easy</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
+
+</head>
+
+<body id="easy">
+    <header id="menu">
+        <p>MENU</p>
+        <i class="material-symbols-outlined">
+            arrow_drop_down
+        </i>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="/index.html">INDEX</a></li>
+            <li><a href="">EASY</a></li>
+            <li><a href="/medium/medium.html">MEDIUM</a></li>
+            <li><a href="/hard/hard.html">HARD</a></li>
+            <li><a href="/very-hard/very-hard.html">VERY HARD</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="input-container">
+            <label for="exercise">Input the exercise of the day.</label>
+            <div>
+                <input type="text" name="exercise" id="exercise">
+                <button type="submit" id="submit">SUBMIT</button>
+            </div>
+            <p id="easy-invalid">Please enter a value.</p>
+        </section>
+
+        <section id="today-container">
+            <section>
+                <p>ENJOY TODAY'S FREE CLASS!</p>
+            </section>
+
+            <section id="notif-container">
+                <p id="notif"></p>
+                <button id="change">CHANGE</button>
+            </section>
+        </section>
+    </main>
+
+    <script src="/script.js"></script>
+    <script src="easy.js"></script>
+</body>
+
+</html>
