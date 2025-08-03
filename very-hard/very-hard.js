@@ -47,11 +47,7 @@ class Programmer extends Person {
     }
 
     learnLanguage(language) {
-        let languages;
-        for (let language of this.languages) { // adds space between languages for better readability
-            languages += `, ${language}`;
-        }
-        // this.languages += language;
+        this.languages += `,${language}`;
     }
 
     listLanguage() {
@@ -66,7 +62,7 @@ const c3 = new Programmer("Manny", "SysOps", 31, ["HTML", "CSS", "JS", "R"]);
 c1.completeTask();
 c1.offerNewTask();
 
-c2.acceptNewTask();
+c3.acceptNewTask();
 c2.offerNewTask();
 
 c3.acceptNewTask();
