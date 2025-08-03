@@ -59,6 +59,7 @@
 //// End of Scratchpad ////
 
 ///// Hard JS /////
+//// Disclaimer: The JS for the UI is not complete /////
 const inputContainer = document.getElementById('input-container');
 const retrieveContainer = document.getElementById('retrieve-container');
 const submitTab = document.getElementById('submit-tab');
