@@ -21,8 +21,8 @@
         <ul>
             <li><a href="/index.html">INDEX</a></li>
             <li><a href="/easy/easy.html">EASY</a></li>
-            <li><a href="">MEDIUM</a></li>
-            <li><a href="/hard/hard.html">HARD</a></li>
+            <li><a href="/medium/medium.html">MEDIUM</a></li>
+            <li><a href="">HARD</a></li>
             <li><a href="/very-hard/very-hard.html">VERY HARD</a></li>
         </ul>
     </nav>
@@ -32,28 +32,50 @@
             <li class="tab" id="retrieve-tab">Retrieve</li>
         </ul>
         <section>
-            <section id="input-container">
+            <form id="input-container">
                 <label for="fullname">Input name</label>
                 <input type="text" name="fullname" id="fullname">
 
-                <section id="input-ssn">
-                    <label for="ssn">Input SSN</label>
-                    <input type="text" name="ssn" id="ssn">
-                </section>
+                <label for="ssn">Input SSN</label>
+                <input type="text" name="ssn" id="ssn">
 
+                <p id="hard-invalid">Please input a unique SSN.</p>
                 <button type="submit" id="submit">Submit</button>
+            </form>
+
+            <div id="overlay"></div>
+            <section id="name-modal">
+                <p>Name not inputed with SSN identifier.</p>
+                <p>Do you wish to continue?</p>
+                <div>
+                    <button id="cancel">Cancel</button>
+                    <button id="continue">Continue</button>
+                </div>
             </section>
 
             <section id="retrieve-container">
-                <label for="name-search">Retrieve name</label>
-                <input type="text" name="name-search" id="name-search">
-                <button id="search-name">Search</button>
+                <button id="back-submit">Back</button>
+                <div id="retrieve-name_container">
+                    <label for="name-search">Retrieve name</label>
+                    <input type="text" name="name-search" id="name-search">
+                    <button id="search-name">Search</button>
+                </div>
 
-                <label for="ssn-search">Retrieve SSN</label>
-                <input type="text" name="ssn-search" id="ssn-search">
-                <button id="search-name">Search</button>
+                <div id="retrieve-ssn_container">
+                    <label for="ssn-search">Retrieve SSN</label>
+                    <input type="text" name="ssn-search" id="ssn-search">
+                    <button id="search-name">Search</button>
+                </div>
 
-                <!-- <p>Collected Data</p> -->
+                <section>
+                    <h2>Collected Data</h2>
+                    <table id="data-table">
+                        <tr>
+                            <th>Name</th>
+                            <th>SSN</th>
+                        </tr>
+                    </table>
+                </section>
             </section>
         </section>
     </main>

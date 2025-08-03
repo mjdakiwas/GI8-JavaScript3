@@ -32,9 +32,7 @@ calculateBtn.addEventListener('click', function () {
             people.classList.add('invalid');
             invalidNotif.textContent = 'Please input a number for the amount of people.';
         }
-        if (slicesValue === '' && peopleValue === '') {
-            invalidNotif.textContent = 'Please input a number for the amount of slices and the amount of people.';
-        }
+        if (slicesValue === '' && peopleValue === '') invalidNotif.textContent = 'Please input a number for the amount of slices and the amount of people.';
     }
 })
 

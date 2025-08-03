@@ -1,3 +1,12 @@
+//// Scratchpad ////
+
+// a constructor can be created either as as a class or function
+// a method is simply a function inside an object
+// constructor function inheritance is done by calling the parent constructor using .call()
+// class constructor inheritance is done by using extends keyword and calling super() inside the child constructor with the parameters of properties to inherit from the parent constructor
+
+//// End of Scratchpad ////
+
 class Person { // this is an object
     constructor(name, job, age) {
         this.name = name; // this is a property
@@ -54,6 +63,15 @@ const person1 = new Person("Harold", "Backend Engineer", 20);
 const c1 = new Programmer("Liana", "DevOps", 35, ["HTML", "C#", "LUA"]);
 const c2 = new Programmer("Edwin", "janitor", 55, ["HTML", "SASS", "Ruby"]);
 const c3 = new Programmer("Manny", "SysOps", 31, ["HTML", "CSS", "JS", "R"]);
+c1.completeTask();
+c1.offerNewTask();
+
+c2.acceptNewTask();
+c2.offerNewTask();
+
+c3.acceptNewTask();
+c3.offerNewTask();
+
 c1.learnLanguage("CSS");
 c2.learnLanguage("C++");
 c3.learnLanguage("JAVA");
